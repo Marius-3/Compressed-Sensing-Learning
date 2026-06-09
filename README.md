@@ -8,7 +8,7 @@
 
 ### 1. 贪婪类稀疏恢复算法
 
-- [Matching Pursuit 与 Orthogonal Matching Pursuit 原理整理](./MP_OMP.md)
+- [Matching Pursuit 与 Orthogonal Matching Pursuit 原理整理（PDF）](./MP_OMP.pdf)
 
 ---
 
@@ -32,17 +32,13 @@
 
 ## 基本模型
 
-压缩感知常见观测模型可以写成：
-
-$$
-\mathbf y = \mathbf A\mathbf x + \mathbf n
-$$
+压缩感知常见观测模型可以写成 `y = Ax + n`。
 
 其中：
 
-- $\mathbf y$ 表示观测向量；
-- $\mathbf A$ 表示观测矩阵或字典矩阵；
-- $\mathbf x$ 表示待恢复的稀疏信号；
-- $\mathbf n$ 表示噪声项。
+- `y` 表示观测向量；
+- `A` 表示观测矩阵或字典矩阵；
+- `x` 表示待恢复的稀疏信号；
+- `n` 表示噪声项。
 
-压缩感知的核心思想是：如果 $\mathbf x$ 是稀疏的，或者在某个变换域中是稀疏的，那么可以用较少的观测数据恢复 $\mathbf x$。
+压缩感知的核心思想是：如果 `x` 是稀疏的，或者在某个变换域中是稀疏的，那么可以用较少的观测数据恢复 `x`。
